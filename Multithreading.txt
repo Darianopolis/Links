@@ -1,0 +1,5 @@
+Fibers
+    Fibers by hand: https://graphitemaster.github.io/fibers/
+
+Timers
+    https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerexw
