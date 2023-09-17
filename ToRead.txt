@@ -1,0 +1,50 @@
+http://filmicworlds.com/blog/visibility-buffer-rendering-with-material-graphs/
+
+Normals Compression - Octahedron
+    https://www.shadertoy.com/view/Mtfyzl
+Normals Compression Comparison
+    https://www.shadertoy.com/view/4llcRl
+Normals Compression
+    https://www.shadertoy.com/view/llfcRl
+
+SVGF denoising
+https://jo.dreggn.org/home/2010_atrous.pdf
+https://bartwronski.com/2019/09/22/local-linear-models-guided-filter/
+
+https://heavyiron.games/getting-into-game-programming/
+
+Infinite grids
+    http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/
+    https://iquilezles.org/articles/filterableprocedurals/
+
+https://observablehq.com/@mourner/uv-mapping-an-icosphere
+https://mft-dev.dk/uv-mapping-sphere/
+https://www.alexisgiard.com/icosahedron-sphere/
+https://schneide.blog/2016/07/15/generating-an-icosphere-in-c/
+https://procworlds.wordpress.com/
+
+Timers
+    https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerexw
+
+Robust solution for avoiding impossible outgoing ray directions with interpolated/mapped normals:
+    https://blog.unity.com/technology/microfacet-based-normal-mapping-for-robust-monte-carlo-path-tracing
+
+Meshing
+    https://www.reddit.com/r/VoxelGameDev/comments/cwtqtu/greedy_meshing_algorithm_implementation/
+    https://0fps.net/2012/06/30/meshing-in-a-minecraft-game/
+    https://gist.github.com/Vercidium/a3002bd083cce2bc854c9ff8f0118d33
+    https://vercidium.com/blog/voxel-world-optimisations/
+
+Audio
+    https://miniaud.io/
+    https://fmod.com/
+
+ReSTIR
+    http://benedikt-bitterli.me/Data/dissertation.pdf
+    https://research.nvidia.com/sites/default/files/pubs/2020-07_Spatiotemporal-reservoir-resampling/ReSTIR.pdf
+    http://lousodrome.net/blog/light/2022/05/14/reading-list-on-restir/
+    https://intro-to-restir.cwyman.org/
+
+Signed-distance functions
+    3D SDFs: https://iquilezles.org/articles/distfunctions/
+    2D SDFs: https://iquilezles.org/articles/distfunctions2d/
