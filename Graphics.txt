@@ -143,17 +143,20 @@ Rasterization:
 Linear Algebra:
     Quaternions on the GPU: https://tech.metail.com/performance-quaternions-gpu/
 
-Vertex packing:
-    Normal encoding: https://knarkowicz.wordpress.com/2014/04/16/octahedron-normal-vector-encoding/
-
 Camera
     https://catlikecoding.com/unity/tutorials/movement/orbit-camera/
 
 PBR:
-    https://learnopengl.com/PBR/Theory
+    LeanOpenGL PBR Theory:
+     - https://learnopengl.com/PBR/Theory
+     - And Devsh's comment on errata in it: https://docs.google.com/document/d/1ZLT1-fIek2JkErN9ZPByeac02nWipMbO89oCW2jxzXo/edit
+
     https://google.github.io/filament/Filament.md.html#materialsystem/standardmodel
 
 Ray Tracing
+    Basic Path Tracer:
+        http://three-eyed-games.com/blog/
+
     RT Gems v1.9 (unofficial):
         https://www.realtimerendering.com/raytracinggems/rtg/index.html
         https://www.realtimerendering.com/raytracinggems/unofficial_RayTracingGems_v1.9.pdf
@@ -209,6 +212,11 @@ Vizbuffer rendering:
     http://filmicworlds.com/blog/visibility-buffer-rendering-with-material-graphs/
 
 Vertex packing
+    Old encodings:    https://aras-p.info/texts/CompactNormalStorage.html
+    Normal encoding:  https://knarkowicz.wordpress.com/2014/04/16/octahedron-normal-vector-encoding/
+    Improved normals: https://johnwhite3d.blogspot.com/2017/10/signed-octahedron-normal-encoding.html?view=classic
+    Tangent space:    https://www.jeremyong.com/graphics/2023/01/09/tangent-spaces-and-diamond-encoding/
+
     Normals Compression - Octahedron
         https://www.shadertoy.com/view/Mtfyzl
     Normals Compression Comparison
@@ -252,3 +260,6 @@ Model resources:
 
 Mesh Tools:
     MeshLab: https://www.meshlab.net/
+
+Post Processing:
+    Film Fraim: https://lettier.github.io/3d-game-shaders-for-beginners/film-grain.html
