@@ -76,6 +76,8 @@ WebGPU:
 
 RenderDoc:
     https://renderdoc.org/docs/getting_started/quick_start.html
+    Suported Vulkan Extensions:
+        https://github.com/baldurk/renderdoc/blob/v1.x/renderdoc/driver/vulkan/extension_support.md
 
 Texture Compression:
     KTX: https://www.khronos.org/ktx/
@@ -152,6 +154,8 @@ PBR:
      - And Devsh's comment on errata in it: https://docs.google.com/document/d/1ZLT1-fIek2JkErN9ZPByeac02nWipMbO89oCW2jxzXo/edit
 
     https://google.github.io/filament/Filament.md.html#materialsystem/standardmodel
+
+    The book: https://pbr-book.org/
 
 Ray Tracing
     Basic Path Tracer:
