@@ -126,9 +126,24 @@ DirectX 12
 Decals, glyphs and outlines
     GPU-Centered Font Rendering Directly from Glyph Outlines:
         http://terathon.com/i3d2018_lengyel.pdf
-    Valve SDF for decals: https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf
-    Outline techniques: https://alexanderameye.github.io/notes/rendering-outlines/
+    Valve SDF for decals:
+        https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf
+    Outlines:
+        https://alexanderameye.github.io/notes/rendering-outlines/
+        https://omar-shehata.medium.com/how-to-render-outlines-in-webgl-8253c14724f9
         Jump Flood: https://bgolus.medium.com/the-quest-for-very-wide-outlines-ba82ed442cd9
+
+    The Best Darn Grid Shader (Yet):
+        https://bgolus.medium.com/the-best-darn-grid-shader-yet-727f9278b9d8
+
+Foliage:
+    Grass:
+        How do Major Video Games Render Grass (Simon dev Youtube):
+            https://www.youtube.com/watch?v=bp7REZBV4P4
+        Billboard Grass (Acerola Youtube):
+            https://www.youtube.com/watch?v=Y0Ko0kvwfgA
+        Modern Foliage Rendering (Acerola Youtube):
+            https://www.youtube.com/watch?v=jw00MbIJcrk
 
 Projections:
    https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/orthographic-projection-matrix.html
@@ -173,6 +188,24 @@ PBR:
         https://github.com/AcademySoftwareFoundation/OpenPBR
         https://academysoftwarefoundation.github.io/OpenPBR/
 
+    http://filmicworlds.com/blog/everything-has-fresnel/
+
+Blending
+    RT OIT:
+        https://interplayoflight.wordpress.com/2023/07/15/raytraced-order-independent-transparency/
+        https://interplayoflight.wordpress.com/2023/07/30/raytraced-order-independent-transparency-part-2/
+
+Double Floats
+    https://csclub.uwaterloo.ca/~pbarfuss/dekker1971.pdf
+    In UE5:
+        https://github.com/EpicGames/UnrealEngine/commit/5a1fd9cc91f179b9aa245634fa7d0d4f08b2dfca
+    Creel: Double it Like Dekker: A Remarkable Technique to Double Floating Point Precision (Part 1)
+        https://www.youtube.com/watch?v=6OuqnaHHUG8#
+
+Tonemapping
+    https://github.com/dmnsgn/glsl-tone-map
+    https://github.com/MrLixm/AgXc/blob/main/reshade/reshade-shaders/Shaders/AgX.fx
+
 Ray Tracing
     Basic Path Tracer:
         http://three-eyed-games.com/blog/
@@ -198,6 +231,7 @@ Ray Tracing
 
     Ray Cones:
         https://d1qx31qr3h6wln.cloudfront.net/publications/Akenine-Moller2021LOD.pdf
+        https://www.jcgt.org/published/0010/01/01/paper-lowres.pdf
 
     PBRT:
         https://www.pbrt.org/
@@ -230,6 +264,10 @@ Ray Tracing
 
 Vizbuffer rendering:
     http://filmicworlds.com/blog/visibility-buffer-rendering-with-material-graphs/
+    Computing Barycentrics:
+        https://github.com/Tearnote/Minote/blob/4bde23edf09af5d08a3f3536cd717a20e272b8e4/src/glsl/visibility/visbuf.glsl#L9
+    Analytical Derivatives:
+        https://github.com/JuanDiegoMontoya/Frogfood/blob/main/data/shaders/visbuffer/VisbufferResolve.frag.glsl#L43-L79
 
 Text rendering:
     https://forenoonwatch.github.io/text_editing.html
@@ -248,6 +286,22 @@ Vertex packing
         https://www.shadertoy.com/view/4llcRl
     Normals Compression
         https://www.shadertoy.com/view/llfcRl
+
+Hardware
+    NVIDIA
+        Turing
+            https://old.hotchips.org/hc31/HC31_2.12_NVIDIA_final.pdf
+            https://arxiv.org/pdf/1903.07486.pdf
+
+Light Sampling
+    https://schuttejoe.github.io/post/arealightsampling/
+
+Skinning
+    https://animcoding.com/post/animation-tech-intro-part-1-skinning
+    https://ogldev.org/www/tutorial38/tutorial38.html
+
+Volumetric scattering
+    Cloud example: https://www.shadertoy.com/view/3sffzj
 
 SVGF denoising
     https://jo.dreggn.org/home/2010_atrous.pdf
@@ -288,3 +342,7 @@ Mesh Tools:
 
 Post Processing:
     Film Grain: https://lettier.github.io/3d-game-shaders-for-beginners/film-grain.html
+
+Game/Engine teardowns:
+    Teardown:
+        https://juandiegomontoya.github.io/teardown_breakdown.html
