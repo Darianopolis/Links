@@ -126,6 +126,8 @@ DirectX 12
 Decals, glyphs and outlines
     GPU-Centered Font Rendering Directly from Glyph Outlines:
         http://terathon.com/i3d2018_lengyel.pdf
+    Text rendering with vector textures:
+        https://wdobbie.com/post/gpu-text-rendering-with-vector-textures/
     Valve SDF for decals:
         https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf
     Outlines:
@@ -202,9 +204,13 @@ Double Floats
     Creel: Double it Like Dekker: A Remarkable Technique to Double Floating Point Precision (Part 1)
         https://www.youtube.com/watch?v=6OuqnaHHUG8#
 
-Tonemapping
+Tonemapping:
     https://github.com/dmnsgn/glsl-tone-map
     https://github.com/MrLixm/AgXc/blob/main/reshade/reshade-shaders/Shaders/AgX.fx
+
+Color spaces & Gamma Correction:
+    https://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/
+    What is Gamma Correction?: https://www.youtube.com/watch?v=wFx0d9c8WMs
 
 Ray Tracing
     Basic Path Tracer:
@@ -236,6 +242,9 @@ Ray Tracing
     PBRT:
         https://www.pbrt.org/
         https://pbr-book.org/
+
+    Intersection tests:
+        https://www.realtimerendering.com/intersections.html
 
     RT Gems:         https://link.springer.com/content/pdf/10.1007%2F978-1-4842-7185-8.pdf
     ReSTIR paper:    https://research.nvidia.com/sites/default/files/pubs/2020-07_Spatiotemporal-reservoir-resampling/ReSTIR.pdf
@@ -279,6 +288,8 @@ Vertex packing
     Normal encoding:  https://knarkowicz.wordpress.com/2014/04/16/octahedron-normal-vector-encoding/
     Improved normals: https://johnwhite3d.blogspot.com/2017/10/signed-octahedron-normal-encoding.html?view=classic
     Tangent space:    https://www.jeremyong.com/graphics/2023/01/09/tangent-spaces-and-diamond-encoding/
+
+    https://wickedengine.net/2023/11/16/dynamic-vertex-formats/
 
     Normals Compression - Octahedron
         https://www.shadertoy.com/view/Mtfyzl
@@ -346,3 +357,7 @@ Post Processing:
 Game/Engine teardowns:
     Teardown:
         https://juandiegomontoya.github.io/teardown_breakdown.html
+
+Profiling:
+    Tracy:
+        https://luxeengine.com/integrating-tracy-profiler-in-cpp/

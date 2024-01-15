@@ -1,0 +1,18 @@
+Analytical Anti-Aliasing: https://docs.google.com/presentation/d/16r9HMS4_UBrcF3HUHscAqbSgkrtIwqaihZNwGP2TL_s/edit#slide=id.p
+https://nanokatze.gitlab.io/vulkan/handling-window-resize/
+https://www.gfxstrand.net/faith/blog/2022/08/descriptors-are-hard/
+Conservative Meshlet Bounds for Robuyst Culling: https://www.youtube.com/watch?v=auE3AF7B06A
+https://giordi91.github.io/post/spirvvec3/
+https://bartwronski.com/2014/04/07/bokeh-depth-of-field-going-insane-part-1/
+Normal/Tangent/Bitangent Processors:
+    https://github.com/Goshido/android-vulkan/blob/0e78381d27f489c0933e9402eb644ef1a180dd6a/app/src/main/cpp/sources/GXCommon/GXMath.cpp#L2199
+    https://github.com/Devsh-Graphics-Programming/Nabla/blob/master/src/nbl/asset/utils/CMeshManipulator.cpp
+Fractal Texturing: https://www.shadertoy.com/view/mds3R4
+Niagara: Meshlet Occlusion Culling: https://www.youtube.com/watch?v=5sBpo5wKmEM
+https://interplayoflight.wordpress.com/2023/12/17/a-gentler-introduction-to-restir/
+https://simonschreibt.de/gat/windows-ac-row-ininite/
+https://www.proun-game.com/Oogst3D/CODING/InteriorMapping/InteriorMapping.pdf
+What is Alpha: https://hg2dc.com/2020/08/26/question-25/
+https://medium.com/mlearning-ai/how-do-gpus-work-13bb243c17d
+https://simonschreibt.de/gat/renderhell/
+https://developer.nvidia.com/content/life-triangle-nvidias-logical-pipeline

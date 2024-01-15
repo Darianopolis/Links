@@ -1,0 +1,67 @@
+Post (column vector) multiplication
+
+    | rxx rxy rxz tx |   x
+    | ryx ryy ryz ty | . y
+    | rzx rzy rzz tz |   z
+    |   0   0   0  1 |   1
+
+    Col-Major
+        rxx ryx rzx  0 | rxy ryy rzy  0 | rxz ryz rzz  0 | tx ty tz 1
+
+    Row-Major
+        rxx rxy rxz tx | ryx ryy ryz ty | rzx rzy rzz tz |  0  0  0 1
+
+Pre (row vector) multiplication
+
+              | rxx ryx rzx 0 |
+    x y z 1 . | rxy ryy rzy 0 |
+              | rxz ryz rzz 0 |
+              |  tx  ty  tz 1 |
+
+    Col-Major
+        rxx rxy rxz tx | ryx ryy ryz ty | rzx rzy rzz tz |  0  0  0 1
+
+    Row-Major
+        rxx ryx rzx  0 | rxy ryy rzy  0 | rxz ryz rzz  0 | tx ty tz 1
+
+Canonical:
+
+    Col-Major + Post Multiplication (glm,         glsl)
+    Row-Major + Pre  Multiplication (DirectXMath, hlsl)
+
+    Affine Transform:
+
+        rxx ryx rzx 0 | rxy ryy rzy 0 | rxz ryz rzz 0 | tx ty tz 1
+
+        (M[0] * V.x) + (M[1] * V.y) + (M[2] * V.z) + (M[3] * V.w)
+
+            7 vec4 operations (4 multiply, 3 add)
+
+    Generalized:
+
+        xx yx zx wx | xy yy zy wy | xz yz zz wz | xw yw zw ww
+
+        (M[0] * V.x) + (M[1] * V.y) + (M[2] * V.z) + (M[3] * V.w)
+
+            7 vec4 operations (4 multiply, 3 add)
+
+Alternative:
+
+    Col-Major + Pre  Multiplication
+    Row-Major + Post Multiplication (Vulkan)
+
+    Affine Transform:
+
+        rxx rxy rxz tx | ryx ryy ryz ty | rzx rzy rzz tz
+
+        [hadd(M[0] * V), hadd(M[1] * V), hadd(M[2] * V), V.w]
+
+            6 vec4 operations (3 multiple, 3 horizontal add)
+
+    Generalized:
+
+        xx xy xz xw | yx yy yz yw | zx zy zz zw | wx wy wz ww
+
+        [hadd(M[0] * V), hadd(M[1] * V), hadd(M[2] * V), hadd(M[3] * V)]
+
+            8 vec4 operations (4 multiply, 4 horizontal add)
