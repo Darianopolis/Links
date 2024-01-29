@@ -1,2 +1,0 @@
-Virtual terminal sequences:
-    ANSI Colors: https://talyian.github.io/ansicolors/

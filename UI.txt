@@ -1,3 +1,0 @@
-UI:
-   https://www.rfleury.com/p/ui-series-table-of-contents
-   https://github.com/rxi/microui

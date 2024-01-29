@@ -98,6 +98,21 @@ Texture Compression:
         GPU Texture Compression talk: https://youtu.be/3H-HGlsC0NY?si=yWsu8jETK_1Wg3z2
         RDO reduced entropy BC7 encoder: https://github.com/richgel999/bc7enc_rdo
 
+Resizing:
+    https://nanokatze.gitlab.io/vulkan/handling-window-resize/
+
+Descriptors:
+    https://www.gfxstrand.net/faith/blog/2022/08/descriptors-are-hard/
+
+GPU Hardware:
+    GPU Data Alignment:
+        https://giordi91.github.io/post/spirvvec3/
+    GPU Fundamentals:
+        https://medium.com/mlearning-ai/how-do-gpus-work-13bb243c17d
+        https://simonschreibt.de/gat/renderhell/
+    GPU Pipelines:
+        https://developer.nvidia.com/content/life-triangle-nvidias-logical-pipeline
+
 Assimp:
     Materials:
         https://assimp-docs.readthedocs.io/en/v5.1.0/API/API-Documentation.html?highlight=aiMaterial#_CPPv410aiMaterial
@@ -113,15 +128,29 @@ Task Graphs:
     https://www.jeremyong.com/rendering/2019/06/28/render-graph-optimization-scribbles/
     https://gist.github.com/rtryan98/c781e27d017e5ac45c76e884416b65fe#render-graphs
 
+Mesh Shader Emulation:
+    https://tellusim.com/mesh-shader-emulation/
+
 Culling:
     Optimized AABB and OBB frustum culling:
         https://www.cse.chalmers.se/~uffe/vfc_bbox.pdf
+    Conservative Meshlet Bounds for Robust Culling:
+        https://www.youtube.com/watch?v=auE3AF7B06A
+    Niagara: Meshlet Occlusion Culling:
+        https://www.youtube.com/watch?v=5sBpo5wKmEM
+
+Procedural Texturing:
+    Fractal Texturing: https://www.shadertoy.com/view/mds3R4
 
 DirectX 12
     Tutorials
         https://www.3dgep.com/learning-directx-12-1/
     Bindless
         https://blog.traverseresearch.nl/bindless-rendering-setup-afeb678d77fc
+
+Parallax / Window Mapping techniques:
+    https://simonschreibt.de/gat/windows-ac-row-ininite/
+    https://www.proun-game.com/Oogst3D/CODING/InteriorMapping/InteriorMapping.pdf
 
 Decals, glyphs and outlines
     GPU-Centered Font Rendering Directly from Glyph Outlines:
@@ -208,9 +237,13 @@ Tonemapping:
     https://github.com/dmnsgn/glsl-tone-map
     https://github.com/MrLixm/AgXc/blob/main/reshade/reshade-shaders/Shaders/AgX.fx
 
-Color spaces & Gamma Correction:
+Alpha, Color spaces, and Gamma Correction:
     https://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/
     What is Gamma Correction?: https://www.youtube.com/watch?v=wFx0d9c8WMs
+    What is Alpha: https://hg2dc.com/2020/08/26/question-25/
+
+Depth of Field:
+    https://bartwronski.com/2014/04/07/bokeh-depth-of-field-going-insane-part-1/
 
 Ray Tracing
     Basic Path Tracer:
@@ -247,9 +280,12 @@ Ray Tracing
         https://www.realtimerendering.com/intersections.html
 
     RT Gems:         https://link.springer.com/content/pdf/10.1007%2F978-1-4842-7185-8.pdf
-    ReSTIR paper:    https://research.nvidia.com/sites/default/files/pubs/2020-07_Spatiotemporal-reservoir-resampling/ReSTIR.pdf
-    ReSTIR GI paper: https://research.nvidia.com/publication/2021-06_restir-gi-path-resampling-real-time-path-tracing
-    ReSTIR article:  https://gamehacker1999.github.io/posts/restir/
+
+    ReSTIR:
+        https://interplayoflight.wordpress.com/2023/12/17/a-gentler-introduction-to-restir/
+        https://research.nvidia.com/sites/default/files/pubs/2020-07_Spatiotemporal-reservoir-resampling/ReSTIR.pdf
+        https://research.nvidia.com/publication/2021-06_restir-gi-path-resampling-real-time-path-tracing
+        https://gamehacker1999.github.io/posts/restir/
 
     Manual BVHs:     https://jacco.ompf2.com/2022/04/13/how-to-build-a-bvh-part-1-basics/
     SBTs explained:  https://www.willusher.io/graphics/2019/11/20/the-sbt-three-ways
@@ -311,6 +347,16 @@ Skinning
     https://animcoding.com/post/animation-tech-intro-part-1-skinning
     https://ogldev.org/www/tutorial38/tutorial38.html
 
+Animation and IK:
+    Animation Bootcamp: An Indie Approach to Procedural Animation
+        https://www.youtube.com/watch?v=LNidsMesxSE
+    Link has more animations than you think
+        https://www.youtube.com/watch?v=cd_kwBKoavg
+    Alternative Biped Solutions
+        https://www.youtube.com/watch?v=LNvA6caxHzs
+
+
+
 Volumetric scattering
     Cloud example: https://www.shadertoy.com/view/3sffzj
 
@@ -361,3 +407,36 @@ Game/Engine teardowns:
 Profiling:
     Tracy:
         https://luxeengine.com/integrating-tracy-profiler-in-cpp/
+
+Anti aliasing:
+    Analytical Anti-Aliasing:
+        https://docs.google.com/presentation/d/16r9HMS4_UBrcF3HUHscAqbSgkrtIwqaihZNwGP2TL_s/edit#slide=id.p
+
+
+Networking:
+    https://www.gafferongames.com/categories/building-a-game-network-protocol/
+
+Audio:
+    https://miniaud.io/
+    https://fmod.com/
+
+Fibers:
+    Fibers by hand: https://graphitemaster.github.io/fibers/
+
+Timers:
+    https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerexw
+
+Virtual terminal sequences:
+    ANSI Colors: https://talyian.github.io/ansicolors/
+
+UI:
+   https://www.rfleury.com/p/ui-series-table-of-contents
+   https://github.com/rxi/microui
+
+Hardware Queries:
+    Windows WMI Queries:
+        https://learn.microsoft.com/en-us/windows/win32/wmisdk/example--getting-wmi-data-from-the-local-computer
+        https://learn.microsoft.com/en-us/windows/win32/wmisdk/querying-wmi
+
+General coding:
+    http://cbloomrants.blogspot.com/2015/09/library-writing-realizations.html?m=1
