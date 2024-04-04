@@ -29,9 +29,13 @@ Vulkan
         https://henriquegois.dev/posts/bindless-resources-in-vulkan/
         https://blog.traverseresearch.nl/bindless-rendering-setup-afeb678d77fc
         https://chunkstories.xyz/blog/a-note-on-descriptor-indexing/
+    Descriptorless rendering (meme):
+        https://msiglreith.gitbook.io/blog/descriptorless-rendering-in-vulkan
     Descriptor buffer: https://www.khronos.org/blog/vk-ext-descriptor-buffer
     Synchronization:   http://themaister.net/blog/2019/08/14/yet-another-blog-explaining-vulkan-synchronization/
     ImGui:             https://frguthmann.github.io/posts/vulkan_imgui/
+    Graphics Pipeline Libraries:
+        https://www.youtube.com/watch?v=o1cdo3d2FQk
     Shader Objects:    https://www.khronos.org/blog/you-can-use-vulkan-without-pipelines-today
     GPU Decompression: https://github.com/nvpro-samples/vk_memory_decompression
 
@@ -142,6 +146,9 @@ Culling:
 Procedural Texturing:
     Fractal Texturing: https://www.shadertoy.com/view/mds3R4
 
+Line Rendering:
+    https://panthavma.com/articles/lines/deep-overview-extraction/
+
 DirectX 12
     Tutorials
         https://www.3dgep.com/learning-directx-12-1/
@@ -207,6 +214,9 @@ Camera
     https://catlikecoding.com/unity/tutorials/movement/orbit-camera/
 
 PBR:
+    https://interplayoflight.wordpress.com/2013/12/30/readings-on-physically-based-rendering/
+    https://lousodrome.net/blog/light/2020/01/04/physically-based-rendering-references-at-the-end-of-2019/
+
     LeanOpenGL PBR Theory:
      - https://learnopengl.com/PBR/Theory
      - And Devsh's comment on errata in it: https://docs.google.com/document/d/1ZLT1-fIek2JkErN9ZPByeac02nWipMbO89oCW2jxzXo/edit
@@ -246,6 +256,12 @@ Depth of Field:
     https://bartwronski.com/2014/04/07/bokeh-depth-of-field-going-insane-part-1/
 
 Ray Tracing
+    Vulkan API Intro:
+        https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/#introduction
+
+    DX12 API Intro:
+        https://landelare.github.io/2023/02/18/dxr-tutorial.html
+
     Basic Path Tracer:
         http://three-eyed-games.com/blog/
 
@@ -415,6 +431,7 @@ Anti aliasing:
 
 Networking:
     https://www.gafferongames.com/categories/building-a-game-network-protocol/
+    https://github.com/ValveSoftware/GameNetworkingSockets
 
 Audio:
     https://miniaud.io/
@@ -423,8 +440,9 @@ Audio:
 Fibers:
     Fibers by hand: https://graphitemaster.github.io/fibers/
 
-Timers:
+Timing:
     https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerexw
+    https://gafferongames.com/post/fix_your_timestep/
 
 Virtual terminal sequences:
     ANSI Colors: https://talyian.github.io/ansicolors/
@@ -440,3 +458,6 @@ Hardware Queries:
 
 General coding:
     http://cbloomrants.blogspot.com/2015/09/library-writing-realizations.html?m=1
+
+Scripting
+    https://kahwei.dev/tag/scripting/
