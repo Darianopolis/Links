@@ -81,6 +81,9 @@ Vulkan
             VK_EXT_mesh_shader
             VK_KHR_fragment_shader_barycentrics (also applicable to normal rasterization)
 
+Normal Mapping / Bump Mapping
+    Hardware mip/antialias compatible normal mapping:
+        https://redirect.cs.umbc.edu/~olano/papers/lean/lean.pdf
 
 WebGPU:
     https://eliemichel.github.io/LearnWebGPU/
