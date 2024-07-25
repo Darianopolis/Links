@@ -38,6 +38,8 @@ Vulkan
         https://www.youtube.com/watch?v=o1cdo3d2FQk
     Shader Objects:    https://www.khronos.org/blog/you-can-use-vulkan-without-pipelines-today
     GPU Decompression: https://github.com/nvpro-samples/vk_memory_decompression
+    Pipeline Caches (and why maybe not to use them):
+        https://medium.com/@zeuxcg/creating-a-robust-pipeline-cache-with-vulkan-961d09416cda
 
     Examples:
         Khronos:        https://github.com/KhronosGroup/Vulkan-Samples
@@ -81,9 +83,23 @@ Vulkan
             VK_EXT_mesh_shader
             VK_KHR_fragment_shader_barycentrics (also applicable to normal rasterization)
 
+Sleeping / Multimedia Timers
+    https://blog.bearcats.nl/perfect-sleep-function/
+
+OpenGL:
+    Glad
+        1.0: https://glad.dav1d.de/
+        2.0: https://gen.glad.sh/
 
 WebGPU:
     https://eliemichel.github.io/LearnWebGPU/
+
+Nanite:
+    https://jglrxavpok.github.io/2024/01/19/recreating-nanite-lod-generation.html#welding-close-enough-vertices-1-the-bruteforce-approach
+
+Slang:
+    User guide
+        https://shader-slang.com/slang/user-guide/index.html
 
 RenderDoc:
     https://renderdoc.org/docs/getting_started/quick_start.html
@@ -183,6 +199,9 @@ Foliage:
         Modern Foliage Rendering (Acerola Youtube):
             https://www.youtube.com/watch?v=jw00MbIJcrk
 
+Global Illumination:
+    https://blog.traverseresearch.nl/dynamic-diffuse-global-illumination-b56dc0525a0a
+
 Projections:
    https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/orthographic-projection-matrix.html
 
@@ -250,6 +269,7 @@ Tonemapping:
 Alpha, Color spaces, and Gamma Correction:
     https://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/
     What is Gamma Correction?: https://www.youtube.com/watch?v=wFx0d9c8WMs
+    Color Spaces: Explained from the Ground Up: https://www.youtube.com/watch?v=99v96TL-tuY
     What is Alpha: https://hg2dc.com/2020/08/26/question-25/
 
 Depth of Field:
@@ -265,12 +285,28 @@ Ray Tracing
     Basic Path Tracer:
         http://three-eyed-games.com/blog/
 
+    Ray tracing in One Weekend:
+        https://raytracing.github.io/
+
+    How to build a BVH:
+        https://jacco.ompf2.com/2022/04/13/how-to-build-a-bvh-part-1-basics/
+
+    Wavefront ray tracing:
+        https://jacco.ompf2.com/2019/07/18/wavefront-path-tracing/
+        https://jacco.ompf2.com/2020/04/07/speeding-up-lighthouse-2/
+
+    Jacco's Articles:
+        https://jacco.ompf2.com/articles/
+
     RT Gems v1.9 (unofficial):
         https://www.realtimerendering.com/raytracinggems/rtg/index.html
         https://www.realtimerendering.com/raytracinggems/unofficial_RayTracingGems_v1.9.pdf
 
-    A Fast and Robust Method for Avoiding Self-Intersection
-        https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_6
+    Avoiding self intersections
+        (OLD) A Fast and Robust Method for Avoiding Self-Intersection
+            https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_6
+        (IMPROVED) Solving Self-Intersection Artifacts in DirectX Raytracing
+            https://developer.nvidia.com/blog/solving-self-intersection-artifacts-in-directx-raytracing/#:~:text=Self-intersection%20can%20be%20avoided,at%20a%20significant%20performance%20penalty
 
     Robust solution for avoiding impossible outgoing ray directions with interpolated/mapped normals:
         https://blog.unity.com/technology/microfacet-based-normal-mapping-for-robust-monte-carlo-path-tracing
@@ -335,6 +371,10 @@ Text rendering:
     https://github.com/freetype/freetype
     https://github.com/harfbuzz/harfbuzz
 
+Hashmaps
+    https://martin.ankerl.com/2022/08/27/hashmap-bench-01/
+    https://jacksonallan.github.io/c_cpp_hash_tables_benchmark/
+
 Vertex packing
     Old encodings:    https://aras-p.info/texts/CompactNormalStorage.html
     Normal encoding:  https://knarkowicz.wordpress.com/2014/04/16/octahedron-normal-vector-encoding/
@@ -371,7 +411,9 @@ Animation and IK:
     Alternative Biped Solutions
         https://www.youtube.com/watch?v=LNvA6caxHzs
 
-
+Virtual Shadow Maps (VSM):
+    Sparse Virtual Shadow Maps (SVSM):
+        https://ktstephano.github.io/rendering/stratusgfx/svsm
 
 Volumetric scattering
     Cloud example: https://www.shadertoy.com/view/3sffzj
@@ -391,11 +433,15 @@ Icospheres
     https://schneide.blog/2016/07/15/generating-an-icosphere-in-c/
     https://procworlds.wordpress.com/
 
-Meshing
-    https://www.reddit.com/r/VoxelGameDev/comments/cwtqtu/greedy_meshing_algorithm_implementation/
-    https://0fps.net/2012/06/30/meshing-in-a-minecraft-game/
-    https://gist.github.com/Vercidium/a3002bd083cce2bc854c9ff8f0118d33
-    https://vercidium.com/blog/voxel-world-optimisations/
+Voxels:
+    Voxel Displacement mapping:
+        https://blog.danielschroeder.me/2024/05/voxel-displacement-modernizing-retro-3d/
+
+    Meshing
+        https://www.reddit.com/r/VoxelGameDev/comments/cwtqtu/greedy_meshing_algorithm_implementation/
+        https://0fps.net/2012/06/30/meshing-in-a-minecraft-game/
+        https://gist.github.com/Vercidium/a3002bd083cce2bc854c9ff8f0118d33
+        https://vercidium.com/blog/voxel-world-optimisations/
 
 ReSTIR
     http://benedikt-bitterli.me/Data/dissertation.pdf
@@ -461,3 +507,8 @@ General coding:
 
 Scripting
     https://kahwei.dev/tag/scripting/
+
+Instructions
+    x64_64 Instruction perf
+        https://www.agner.org/optimize/instruction_tables.pdf
+        https://www.agner.org/optimize/instruction_tables.ods

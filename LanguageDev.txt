@@ -1,0 +1,3 @@
+https://craftinginterpreters.com/
+https://poly.substack.com/p/why-im-using-a-recursive-descent
+https://blog.adamant-lang.org/2019/dreaming-of-a-parser-generator/

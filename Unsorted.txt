@@ -1,0 +1,5 @@
+https://dl.acm.org/doi/pdf/10.5555/2305276.23053101
+https://themaister.net/blog/2022/04/11/my-personal-hell-of-translating-dxil-to-spir-v-part-4/
+https://rtarun9.github.io/blogs/bindless_rendering/
+https://www.aswf.io/blog/academy-software-foundation-releases-openpbr-1-0/
+https://wdobbie.com/post/gpu-text-rendering-with-vector-textures/
