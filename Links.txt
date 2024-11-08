@@ -91,6 +91,10 @@ OpenGL:
         1.0: https://glad.dav1d.de/
         2.0: https://gen.glad.sh/
 
+Normal Mapping / Bump Mapping
+    Hardware mip/antialias compatible normal mapping:
+        https://redirect.cs.umbc.edu/~olano/papers/lean/lean.pdf
+
 WebGPU:
     https://eliemichel.github.io/LearnWebGPU/
 
