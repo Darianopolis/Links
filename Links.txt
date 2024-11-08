@@ -233,6 +233,9 @@ Camera
     https://catlikecoding.com/unity/tutorials/movement/orbit-camera/
 
 PBR:
+    PBR in Filament:
+        https://google.github.io/filament/Filament.md.html
+
     https://interplayoflight.wordpress.com/2013/12/30/readings-on-physically-based-rendering/
     https://lousodrome.net/blog/light/2020/01/04/physically-based-rendering-references-at-the-end-of-2019/
 
@@ -251,9 +254,12 @@ PBR:
     http://filmicworlds.com/blog/everything-has-fresnel/
 
 Blending
-    RT OIT:
-        https://interplayoflight.wordpress.com/2023/07/15/raytraced-order-independent-transparency/
-        https://interplayoflight.wordpress.com/2023/07/30/raytraced-order-independent-transparency-part-2/
+    Order Independent Transparnecy (OIT):
+        Ray Traced:
+            https://interplayoflight.wordpress.com/2023/07/15/raytraced-order-independent-transparency/
+            https://interplayoflight.wordpress.com/2023/07/30/raytraced-order-independent-transparency-part-2/
+
+        https://osor.io/OIT
 
 Double Floats
     https://csclub.uwaterloo.ca/~pbarfuss/dekker1971.pdf
@@ -274,6 +280,10 @@ Alpha, Color spaces, and Gamma Correction:
 
 Depth of Field:
     https://bartwronski.com/2014/04/07/bokeh-depth-of-field-going-insane-part-1/
+
+IBL (Image Based Lighting)
+    Free equirectangular HDR environment Map Samples:
+        https://www.hdri-hub.com/free-samples
 
 Ray Tracing
     Vulkan API Intro:
@@ -370,6 +380,11 @@ Text rendering:
     https://forenoonwatch.github.io/text_editing.html
     https://github.com/freetype/freetype
     https://github.com/harfbuzz/harfbuzz
+
+Text:
+    https://faultlore.com/blah/text-hates-you/
+    https://notes.billmill.org/link_blog/2024/07/State_of_Text_Rendering_2024.html
+    https://lord.io/text-editing-hates-you-too/
 
 Hashmaps
     https://martin.ankerl.com/2022/08/27/hashmap-bench-01/
@@ -512,3 +527,6 @@ Instructions
     x64_64 Instruction perf
         https://www.agner.org/optimize/instruction_tables.pdf
         https://www.agner.org/optimize/instruction_tables.ods
+
+Job Systems
+    https://blog.molecular-matters.com/2015/08/24/job-system-2-0-lock-free-work-stealing-part-1-basics/
