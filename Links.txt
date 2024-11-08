@@ -4,11 +4,11 @@
 
 Vulkan
     **** TL;DR - Getting Started ****
-        1) VK Tutorial: https://vulkan-tutorial.com/
-        2) Sync blog post: http://themaister.net/blog/2019/08/14/yet-another-blog-explaining-vulkan-synchronization/
-        3) VK Lecture Series: https://www.youtube.com/watch?v=tLwbj9qys18&list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn
-        4) VK Guide: https://vkguide.dev/
-        5) Docs: https://registry.khronos.org/vulkan/specs/1.3-extensions/html/index.html
+        - vkguide: https://vkguide.dev/
+        - vulkan-tutorial: https://vulkan-tutorial.com/ (for initialization only)
+        - Sync blog post: http://themaister.net/blog/2019/08/14/yet-another-blog-explaining-vulkan-synchronization/
+        - Docs: https://registry.khronos.org/vulkan/specs/1.3-extensions/html/index.html
+        - VK Lecture Series: https://www.youtube.com/watch?v=tLwbj9qys18&list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn
 
     Docs:
         https://docs.vulkan.org/spec/latest/index.html
