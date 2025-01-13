@@ -1,0 +1,2 @@
+CMake:
+    https://www.ravbug.com/tutorials/cmake-easy/

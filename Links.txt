@@ -7,6 +7,7 @@ Vulkan
         - vkguide: https://vkguide.dev/
         - vulkan-tutorial: https://vulkan-tutorial.com/ (for initialization only)
         - Sync blog post: http://themaister.net/blog/2019/08/14/yet-another-blog-explaining-vulkan-synchronization/
+        - Frames in flight: https://erfan-ahmadi.github.io/blog/Nabla/fif
         - Docs: https://registry.khronos.org/vulkan/specs/1.3-extensions/html/index.html
         - VK Lecture Series: https://www.youtube.com/watch?v=tLwbj9qys18&list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn
 
@@ -25,6 +26,8 @@ Vulkan
 
     Dynamic rendering: https://lesleylai.info/en/vk-khr-dynamic-rendering/
     Ray Tracing:       https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/#introduction
+    Buffer Device Address:
+        https://docs.vulkan.org/samples/latest/samples/extensions/buffer_device_address/README.html
     Descriptor Indexing & Bindless:
         https://henriquegois.dev/posts/bindless-resources-in-vulkan/
         https://blog.traverseresearch.nl/bindless-rendering-setup-afeb678d77fc
@@ -46,12 +49,13 @@ Vulkan
         Sascha Willems: https://github.com/SaschaWillems/Vulkan
 
     Useful Extension:
-        Core in Vulkan 1.2:
-            VK_EXT_descriptor_indexing
-            VK_KHR_buffer_device_address
+        Core in Vulkan 1.1:
             VK_KHR_maintenance1
             VK_KHR_maintenance2
             VK_KHR_maintenance3
+        Core in Vulkan 1.2:
+            VK_EXT_descriptor_indexing
+            VK_KHR_buffer_device_address
             VK_KHR_timeline_semaphore
         Core in Vulkan 1.3:
             VK_KHR_dynamic_rendering
@@ -84,7 +88,15 @@ Vulkan
             VK_KHR_fragment_shader_barycentrics (also applicable to normal rasterization)
 
 Sleeping / Multimedia Timers
+    https://blat-blatnik.github.io/computerBear/making-accurate-sleep-function/
     https://blog.bearcats.nl/perfect-sleep-function/
+
+Frame Pacing:
+    https://raphlinus.github.io/ui/graphics/2020/09/13/compositor-is-evil.html
+    https://raphlinus.github.io/ui/graphics/gpu/2021/10/22/swapchain-frame-pacing.html
+
+    PresentMon:
+        https://github.com/GameTechDev/PresentMon
 
 OpenGL:
     Glad
@@ -354,7 +366,8 @@ Ray Tracing
         https://gamehacker1999.github.io/posts/restir/
 
     Manual BVHs:     https://jacco.ompf2.com/2022/04/13/how-to-build-a-bvh-part-1-basics/
-    SBTs explained:  https://www.willusher.io/graphics/2019/11/20/the-sbt-three-ways
+    Shader Bindings tables (SBTs) explained:
+                    https://www.willusher.io/graphics/2019/11/20/the-sbt-three-ways
 
     Denoising:
         https://alain.xyz/blog/ray-tracing-denoising#accumulation
@@ -372,6 +385,10 @@ Ray Tracing
         https://www.shadertoy.com/view/XdyyDd
         https://www.shadertoy.com/view/llGyRd
         https://www.shadertoy.com/view/sltXRl
+
+GPU Parallel Algorithms:
+    Warp-Aggregated Atomics:
+        https://developer.nvidia.com/blog/cuda-pro-tip-optimized-filtering-warp-aggregated-atomics/
 
 Vizbuffer rendering:
     http://filmicworlds.com/blog/visibility-buffer-rendering-with-material-graphs/
@@ -492,6 +509,9 @@ Profiling:
 Anti aliasing:
     Analytical Anti-Aliasing:
         https://docs.google.com/presentation/d/16r9HMS4_UBrcF3HUHscAqbSgkrtIwqaihZNwGP2TL_s/edit#slide=id.p
+
+    TAA:
+        https://www.elopezr.com/temporal-aa-and-the-quest-for-the-holy-trail/
 
 
 Networking:

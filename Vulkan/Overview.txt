@@ -1,0 +1,75 @@
+Guides
+- https://vkguide.dev/
+- https://vulkan-tutorial.com/
+- ? https://www.intel.com/content/www/us/en/developer/articles/training/api-without-secrets-introduction-to-vulkan-part-1.html
+
+Validation & Debug
+- Enable validation layers via the configurator, not programmatically
+- Use debug names and labels
+- Use graphic API debuggers such as RenderDoc, NSight and RGP
+
+General
+- Target Vulkan 1.3
+  - Previous versions are only useful for supporting old devices (often with EOL drivers and quite possibly unresolved issues)
+- Always prefer dynamically loaded vulkan function pointers (for your code and 3rd party libraries)
+  - Load function pointers for the specific device or instance to reduce layer dispatch overheads
+- Don't request extensions if they are core in your minimum target Vulkan version
+  - Unless required by a 3rd party library
+  - Use core versions of functions from core extensions
+
+Synchronization
+- Read http://themaister.net/blog/2019/08/14/yet-another-blog-explaining-vulkan-synchronization/
+- Use [VK_KHR_synchronization2] operations
+- Use [VK_KHR_timeline_semaphore] instead of binary semaphores and fences where applicable
+- Frames in flight and swapchain image count are NOT the same thing, they are two separate points of buffering
+  - Frames in Flight:   host - device
+  - Swapchain Images: device - presentation engine
+  - Be way of certain materials and libraries that conflate the two
+
+Queues
+- Require that the main graphics queue can perform presentation
+- Only request as many queues as you need. Excess queues have memory, synchronization, and other performance cost implications
+- Don't use more than 1 graphics queue
+- Don't assume you have access to more than one queue
+
+Transfers
+- Latency sensitive device-device transfers should be performed on the same graphics/compute queue that they are being used on
+- Dedicated transfer queues should be used for device-host transfers and background device-device transfers
+
+Rendering
+- Use [VK_KHR_dynamic_rendering] when targeting desktop to avoid [VkRenderPass] and [VkFramebuffer] management
+
+Descriptors
+- Use [VK_KHR_buffer_device_address] instead of buffer descriptors
+- Use [VK_SHARING_MODE_CONCURRENT] sharing mode for all buffers
+- Set all common buffer usages (excluding specialized usage such as [SAMPLER/RESOURCE]_DESCRIPTOR / PREPROCESS_BUFFER
+    with specific memory allocation implications) by default
+- Use [VK_SHARING_MODE_EXCLUSIVE] sharing mode for all textures and insert explicit QFOT operations
+  - TODO: Potentially only meaningfully benefit majorly from exclusive with swapchain images?
+- Use "bindless" arrays of textures and samplers instead of per-shader set layouts
+  - Use [GL_EXT_shader_image_load_formatted] in GLSL to avoid specifying many aliases for storage texture descriptors
+  - Don't use combined image samplers unless its for an NVIDIA specific code path - AMD doesn't like 'em
+    - Emulate combined image samplers using texture/sampler index pairs in a 32 bit handle (24 bits for texture, 8 bits)
+- Use push constants to pass in initial context
+  - Use 128 bytes max for portability
+- Share structures between shader and host code via includes
+- Don't use shader reflection for resources
+  - Shared structures and bindless textures make common uses of reflection redundant
+
+Shaders & Pipelines
+- Use dynamic state (including [VK_EXT_extended_dynamic_state(2|3)] where available) to reduce pipeline permutations
+  - NOTE: Some dynamic state may have shader performance implications
+- Use [VK_KHR_maintenance5] when available to bypass [VkShaderModule] objects
+- Use [VK_KHR_pipeline_library] to reduce pre-optimized pipeline permutations for improved latency when compiling new pipelines on the fly
+- Optionally use [VK_EXT_shader_object] to eliminate pipelines and shader modules entirely
+
+3rd party libraries
+- Use volk to load vulkan function pointers
+- Use Vulkan Memory Allocator to simplify the allocation process
+
+Architecture
+- Only expose timeline semaphores
+- Use "adapter submits" internally to adapt to/from timeline semaphores for WSI operations
+  - Bundle [imageCount * 2] binary semaphores with each swapchain to cycle through
+- Bundle a timeline semaphore with each queue and signal increasing values on it for all submitted operations
+  - Together these remove the need for almost all manual synchronization object management

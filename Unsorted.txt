@@ -3,3 +3,6 @@ https://themaister.net/blog/2022/04/11/my-personal-hell-of-translating-dxil-to-s
 https://rtarun9.github.io/blogs/bindless_rendering/
 https://www.aswf.io/blog/academy-software-foundation-releases-openpbr-1-0/
 https://wdobbie.com/post/gpu-text-rendering-with-vector-textures/
+
+Vulkan Game Engine Tutorial - To Review and consider
+    https://www.youtube.com/watch?v=Y9U9IE0gVHA
